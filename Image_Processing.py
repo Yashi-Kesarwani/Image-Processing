@@ -15,7 +15,7 @@ def blur(image):    # blur image
     kernels = [3, 5, 9, 13]     #matrix
     for idx,k in enumerate(kernels):
         image_bl = cv2.blur(image, ksize = (k,k))
-        cv2.imshow(str(k), image_bl)      #show image
+        cv2.imshow(str(k), image_bl)      #display an image
         cv2.waitKey(0)    # to see image
     return     
     
